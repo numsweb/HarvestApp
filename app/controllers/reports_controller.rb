@@ -9,10 +9,12 @@ class ReportsController < ApplicationController
   
   def create
     #fetch and display the report
-    #@harvest=Harvest.new(params[:report][:company], params[:report][:login], params[:report][:password])
-    #@harvest.do_connect
-    
-    @connection = GLOBAL_CONNECTION
+    @connection=Harvest.new(params[:report][:company], params[:report][:login], params[:report][:password])
+    @connection.do_connect
+
+    if @connection
+      session[:login_info] = {:login => params[:report][:login], :company => params[:report][:company], :password =>   params[:report][:password]}
+    end
 
 
     @company = @connection.company
@@ -49,7 +51,9 @@ class ReportsController < ApplicationController
   end
   
   def show
-    @connection = GLOBAL_CONNECTION
+  
+    @connection=Harvest.new(session[:login_info][:company], session[:login_info][:login], session[:login_info][:password])
+    @connection.do_connect
     @company = @connection.company
 
     response = @connection.request "/invoices/#{params[:id]}", :get
