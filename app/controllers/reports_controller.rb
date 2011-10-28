@@ -38,9 +38,9 @@ class ReportsController < ApplicationController
       @full_invoice = JSON.parse(response.body)["doc"]["csv_line_items"]
      
        if 1.weeks.ago.to_date > due_date 
-         @invoice_details << {:id => invoice["doc"]["id"], :client_id => invoice["doc"]["client_id"], :name => rc[1], :status => "overdue", :invoice_number => invoice["doc"]["number"], :total_amount => invoice["doc"]["due_amount"], :full_invoice =>  @full_invoice}
+         @invoice_details << {:id => invoice["doc"]["id"], :client_id => invoice["doc"]["client_id"], :name => rc[1], :status => "overdue", :invoice_number => invoice["doc"]["number"], :total_amount => invoice["doc"]["amount"], :full_invoice =>  @full_invoice}
        else
-        @invoice_details << {:id => invoice["doc"]["id"], :client_id => invoice["doc"]["client_id"],:name =>rc[1], :status => "current", :invoice_number => invoice["doc"]["number"], :total_amount => invoice["doc"]["due_amount"] , :full_invoice =>  @full_invoice}
+        @invoice_details << {:id => invoice["doc"]["id"], :client_id => invoice["doc"]["client_id"],:name =>rc[1], :status => "current", :invoice_number => invoice["doc"]["number"], :total_amount => invoice["doc"]["amount"] , :full_invoice =>  @full_invoice}
        end
        
     

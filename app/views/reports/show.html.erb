@@ -70,11 +70,20 @@
        <td class="type"><%= line_item[:type] %></td>
        <td class="description"><%= line_item[:description] %></td>
        <td class="quantity"> <%= line_item[:quantity] %></td>
-       <td class="unit_price"><%= line_item[:unit_price] %></td>
-       <td class="amount"><%= line_item[:amount]%></td>
+       <td class="unit_price">$ <%= line_item[:unit_price] %></td>
+       <td class="amount">$ <%= line_item[:amount]%></td>
      </tr>
     <% end %>
 
+  </table>
+  
+  <table class="total">
+    <tr>
+      <th>Amount Due</th>
+      <th>$ <%= @full_invoice["amount"] %></th>
+      
+    </tr>
+    
   </table>
 </div>
 

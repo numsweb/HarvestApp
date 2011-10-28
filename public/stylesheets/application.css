@@ -54,3 +54,13 @@ a{
      font-weight:bold;
 }
 
+.total{
+    margin-top:30px;
+    margin-left:730px;
+}
+
+.total td, .total th{
+    border-bottom:0px;
+    padding-left:30px;
+}
+

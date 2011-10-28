@@ -4,6 +4,7 @@
   <table>
       <tr>
         <th>Status</th>
+        <th>Invoice number</th>
         <th>Client</th>
         <th> Description</th>
         <th>Quantity</th>
@@ -23,19 +24,19 @@
 
     <% parts2 = part_1.split(",") %>
     
-  
+
       <tr>
-    
      <% if detail[:status] == "overdue" %>
        <td class="overdue"> <b><%= link_to "Overdue", report_path(:id => detail[:id]) %></b></td>
      <% else %>
        <td><%= link_to "Current", report_path(:id => detail[:id]) %></td>
     <% end %>
-        <td><%= detail[:name] %></td>
-         <td><%= parts2[1] %></td>
-         <td><%= parts2[2] %></td>
-         <td><%= parts2[3] %></td>
-        <td><%= parts2[4] %></td>
+        <td class="invoice_number"><%= detail[:invoice_number] %> </td>
+        <td class="client_name"><%= detail[:name] %></td>
+         <td class="description"><%= parts2[1] %></td>
+         <td class="quantity"><%= parts2[2] %></td>
+         <td class="unit_price">$ <%= parts2[3] %></td>
+        <td class="amount">$ <%= detail[:total_amount] %></td>
       </tr>
 
 <% end %>
