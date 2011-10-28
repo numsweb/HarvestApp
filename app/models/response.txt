@@ -1,9 +1,0 @@
-----------------------------
-getting a list of clients
-numsweb
-
-----------------------------
-getting a list on invoices for each client
-invoices for 750031: numsweb
-2 was due on 2011-10-22 total amount 1100.0
-1 was due on 2011-10-01 total amount 385.0
