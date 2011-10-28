@@ -1,8 +1,15 @@
-<h3> report for (time tracking company) <%= @company.capitalize %></h3>
-
-
+<h3> Invoices for Company <%= @company.capitalize %></h3>
 
 <% my_counter = 0 %>
+  <table>
+      <tr>
+        <th>Status</th>
+        <th>Client</th>
+        <th> Description</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Amount</th> 
+      </tr>
 
 <% @invoice_details.each do |detail| %>
 
@@ -16,16 +23,20 @@
 
     <% parts2 = part_1.split(",") %>
     
+  
+      <tr>
+    
      <% if detail[:status] == "overdue" %>
-       <p style="color:red;"> <b><%= link_to "Overdue:", report_path(:id => detail[:id]) %></b><br/>
+       <td class="overdue"> <b><%= link_to "Overdue", report_path(:id => detail[:id]) %></b></td>
      <% else %>
-       <p><%= link_to "Current:", report_path(:id => detail[:id]) %><br/>
+       <td><%= link_to "Current", report_path(:id => detail[:id]) %></td>
     <% end %>
-        Client: <%= detail[:name] %><br/>
-         <b> Description: </b><%= parts2[1] %><br/>
-         <b>Quantity:</b> <%= parts2[2] %><br/>
-         <b>Unit Price: </b><%= parts2[3] %><br/>
-        <b>Amount:</b> <%= parts2[4] %><br/>
-       </p>
+        <td><%= detail[:name] %></td>
+         <td><%= parts2[1] %></td>
+         <td><%= parts2[2] %></td>
+         <td><%= parts2[3] %></td>
+        <td><%= parts2[4] %></td>
+      </tr>
 
 <% end %>
+    </table>

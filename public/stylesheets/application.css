@@ -43,4 +43,14 @@ td.amount, td.unit_price, td.quantity{
 td.amount {
     border-right:0px;
 }
+.overdue a{
+    color:red;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color:#337733;
+     font-weight:bold;
+}
 
