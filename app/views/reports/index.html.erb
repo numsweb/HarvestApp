@@ -1,0 +1,24 @@
+<h1>Set Credentials</h1>
+
+<%= form_for "report",  :url => reports_path, :html => {:method => :post} do |f| %>
+<p>Please log in.</p>
+
+<table>
+  <tr>
+    <th width="10%"><label for="user_name">Login:</label></th>
+    <td><%= f.text_field 'login', :size => 30 %></td>
+  </tr>
+  
+  <tr>
+    <th><label for="password">Password:</label></th>
+    <td><%= f.password_field 'password', :size => 30 %></td>
+  </tr>
+
+  <tr>
+    <th><label for="remember_me">Company:</label></th>
+   <td><%= f.text_field 'company', :size => 30 %></td>
+  </tr>
+</table>
+
+<p><%= f.submit 'Get Report' %></p>
+<% end -%>

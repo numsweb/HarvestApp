@@ -1,0 +1,157 @@
+----------------------------
+Reading all your tasks
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks type="array">
+  <task>
+    <name>Admin</name>
+    <created-at type="datetime">2011-10-13T22:53:15Z</created-at>
+    <billable-by-default type="boolean">false</billable-by-default>
+    <is-default type="boolean">true</is-default>
+    <updated-at type="datetime">2011-10-13T22:53:15Z</updated-at>
+    <id type="integer">1057498</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>ApiSample1318546912-updated</name>
+    <created-at type="datetime">2011-10-13T23:01:53Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:01:54Z</updated-at>
+    <id type="integer">1057511</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>ApiSample1318547000-updated</name>
+    <created-at type="datetime">2011-10-13T23:03:20Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:03:21Z</updated-at>
+    <id type="integer">1057512</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>ApiSample1318547106-updated</name>
+    <created-at type="datetime">2011-10-13T23:05:07Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:05:08Z</updated-at>
+    <id type="integer">1057513</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>ApiSample1318547118-updated</name>
+    <created-at type="datetime">2011-10-13T23:05:19Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:05:20Z</updated-at>
+    <id type="integer">1057514</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>ApiSample1318547128-updated</name>
+    <created-at type="datetime">2011-10-13T23:05:28Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:05:29Z</updated-at>
+    <id type="integer">1057515</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>Business Development</name>
+    <created-at type="datetime">2011-10-13T22:53:15Z</created-at>
+    <billable-by-default type="boolean">false</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T22:53:15Z</updated-at>
+    <id type="integer">1057500</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>new task for project 2</name>
+    <created-at type="datetime">2011-10-13T23:08:52Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:08:52Z</updated-at>
+    <id type="integer">1057519</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>Project Management</name>
+    <created-at type="datetime">2011-10-13T22:53:15Z</created-at>
+    <billable-by-default type="boolean">false</billable-by-default>
+    <is-default type="boolean">true</is-default>
+    <updated-at type="datetime">2011-10-13T22:53:15Z</updated-at>
+    <id type="integer">1057499</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>task for project internal</name>
+    <created-at type="datetime">2011-10-13T23:10:29Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:10:29Z</updated-at>
+    <id type="integer">1057521</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>task for project test</name>
+    <created-at type="datetime">2011-10-13T23:09:51Z</created-at>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T23:09:51Z</updated-at>
+    <id type="integer">1057520</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+  <task>
+    <name>Vacation</name>
+    <created-at type="datetime">2011-10-13T22:53:15Z</created-at>
+    <billable-by-default type="boolean">false</billable-by-default>
+    <is-default type="boolean">false</is-default>
+    <updated-at type="datetime">2011-10-13T22:53:15Z</updated-at>
+    <id type="integer">1057501</id>
+    <cache-version type="integer">0</cache-version>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+  </task>
+</tasks>
+----------------------------
+Creating a new task with name ApiSample1318547446
+new task can be reached at /tasks/1057522
+and  has the task_id of 1057522
+----------------------------
+Read a single task only (task_id=1057522)
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>ApiSample1318547446</name>
+  <created-at type="datetime">2011-10-13T23:10:47Z</created-at>
+  <billable-by-default type="boolean">true</billable-by-default>
+  <is-default type="boolean">false</is-default>
+  <updated-at type="datetime">2011-10-13T23:10:47Z</updated-at>
+  <id type="integer">1057522</id>
+  <cache-version type="integer">0</cache-version>
+  <deactivated type="boolean">false</deactivated>
+  <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+</task>
+----------------------------
+Change name of task with id 1057522 to be ApiSample1318547446-updated

@@ -1,0 +1,31 @@
+<h3> report for (time tracking company) <%= @company.capitalize %></h3>
+
+
+
+<% my_counter = 0 %>
+
+<% @invoice_details.each do |detail| %>
+
+    <% my_counter += 1 %>
+
+    <% full_detail = detail[:full_invoice]%>
+  
+    
+    <% parts = full_detail.split("\n") %>
+    <% part_1 = parts[1] %>
+
+    <% parts2 = part_1.split(",") %>
+    
+     <% if detail[:status] == "overdue" %>
+       <p style="color:red;"> <b>Overdue:</b><br/>
+     <% else %>
+       <p>Current:<br/>
+    <% end %>
+        Client: <%= detail[:name] %><br/>
+         <b> Description: </b><%= parts2[1] %><br/>
+         <b>Quantity:</b> <%= parts2[2] %><br/>
+         <b>Unit Price: </b><%= parts2[3] %><br/>
+        <b>Amount:</b> <%= parts2[4] %><br/>
+       </p>
+
+<% end %>
