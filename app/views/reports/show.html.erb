@@ -1,0 +1,83 @@
+
+
+<div style="width:1000px;">
+  <div style="float:right;">
+    <table>
+    
+      <tr>
+      
+      </tr>
+    </table>
+  </div>
+  
+  <div style="float:left;">
+    <table >
+      <tr>
+        <td>
+          <h1>INVOICE</h1>
+        </td>
+        <td>
+        </td>
+        <td style="width:600px;"></td>
+        <td>
+          From | <b><%=  @company %> </b>
+        </td>
+      </tr>
+      <tr>
+        
+        <td>
+          Invoice ID
+        </td>
+        <td>
+          <%= @full_invoice["number"] %>
+        </td>
+        <td style="width:600px;"></td>
+        <td>
+          Invoice For | <%= @client["client"]["name"]%>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Issue Date
+        </td>
+        <td>
+          <%= @full_invoice["issued_at"] %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Due Date
+        </td>
+        <td>
+          <%= @full_invoice["due_at_human_format"] %>
+        </td>
+    </table>
+  </div>
+</div>
+<div style="clear:both;"></div>
+<div style="float:left;">
+  <table class="results" cellpadding=5, cellspacing=0>
+    <tr>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+      <th class="quantity">Quantity</th>
+      <th class="unit_price">Unit Price</th>
+      <th class="amount">Amount</th>
+    </tr>
+    
+    <% @line_items.each do |line_item| %>
+      <tr>
+       <td class="type"><%= line_item[:type] %></td>
+       <td class="description"><%= line_item[:description] %></td>
+       <td class="quantity"> <%= line_item[:quantity] %></td>
+       <td class="unit_price"><%= line_item[:unit_price] %></td>
+       <td class="amount"><%= line_item[:amount]%></td>
+     </tr>
+    <% end %>
+
+  </table>
+</div>
+
+
+
+

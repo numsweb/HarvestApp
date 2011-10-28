@@ -1,0 +1,46 @@
+
+body {
+  background-color: #ffffff;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+th, .results td {
+    border-bottom:1px solid #cacaca;
+}
+
+.results {
+  margin-top:30px;
+}
+
+.results td {
+    padding-left:20px;
+    padding-right:20 px;
+    border-right:1px solid #cacaca;
+}
+.type{
+    width:100px;
+}
+.description{
+    width:500px;
+}
+
+.quantity{
+    width:75px;
+}
+
+.unit_price{
+    width:75px;
+}
+.amount{
+     border-right:0px solid #cacaca;
+     width:75px;  
+}
+
+td.amount, td.unit_price, td.quantity{
+    text-align:right;
+}
+td.amount {
+    border-right:0px;
+}
+

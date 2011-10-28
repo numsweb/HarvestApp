@@ -17,9 +17,9 @@
     <% parts2 = part_1.split(",") %>
     
      <% if detail[:status] == "overdue" %>
-       <p style="color:red;"> <b>Overdue:</b><br/>
+       <p style="color:red;"> <b><%= link_to "Overdue:", report_path(:id => detail[:id]) %></b><br/>
      <% else %>
-       <p>Current:<br/>
+       <p><%= link_to "Current:", report_path(:id => detail[:id]) %><br/>
     <% end %>
         Client: <%= detail[:name] %><br/>
          <b> Description: </b><%= parts2[1] %><br/>

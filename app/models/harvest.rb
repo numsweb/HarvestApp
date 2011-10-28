@@ -110,6 +110,11 @@ class Harvest
       raise "#{response.message} (#{response.code})\n\n#{dump_headers}\n\n#{response.body}\n"
     end
   end
+  
+  
+  def get_connection
+    self
+  end
 
   private
 
@@ -147,5 +152,7 @@ class Harvest
     @retry_counter ||= 0
     @retry_counter += 1
   end
+  
+ 
 
 end
