@@ -43,6 +43,9 @@ td.amount, td.unit_price, td.quantity{
 td.amount {
     border-right:0px;
 }
+td.invoice_number{
+    text-align:center;
+}
 .overdue a{
     color:red;
     font-weight:bold;
